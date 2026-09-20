@@ -64,8 +64,8 @@ Base URL: `http://127.0.0.1:8000/api/`
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/<your-username>/<repo-name>.git
-cd <repo-name>
+git clone https://github.com/MuhammadAhsan1-rgb/Inventory_management_system_api.git
+cd Inventory_management_system_api
 ```
 
 ### 2. Create and activate a virtual environment
@@ -190,16 +190,3 @@ To set stock to zero, mark the product unavailable in the same request:
 - Field-level (`validate_<field>`) and object-level (`validate`) validation
 - Handling `PUT` vs `PATCH` (`update` vs `partial_update`)
 - Referential integrity with `on_delete=PROTECT`
-
-## Roadmap
-
-- [ ] Return a clean `400` response (instead of a server error) when deleting a category that still has products, by overriding `destroy()`
-- [ ] `GET /api/categories/<pk>/products/` using `ListAPIView`, returning `404` for unknown categories
-- [ ] Filtering on `/api/products/`: `?category=`, `?is_available=`, `?min_price=`, `?max_price=`, `?search=`
-- [ ] Page-number pagination on the products list
-- [ ] Optional: `?ordering=price` / `?ordering=-price`
-
-## Author
-
-**<Your Name>**
-GitHub: [@<your-username>](https://github.com/<your-username>)
